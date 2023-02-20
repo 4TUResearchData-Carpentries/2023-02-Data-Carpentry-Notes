@@ -25,6 +25,7 @@ To work with the solution instructors need to have the following setup ready:
 - GitHub account added to the repository as a Contributor 
 
 ### Steps
+
 - `pip install gitautopush`
 - `git clone` this repository to your local directory
 - if you have cloned the repository a while ago, `git pull` to avoid conflicts
