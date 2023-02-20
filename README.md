@@ -7,7 +7,9 @@ In this repository you will find scripts and documents created during the [Data 
 The repository should mimic the project structure of the R project that has been created by the instructors during the Data Carpentry. 
 - In the files list above, find a folder icon with the name of the project that the instructor has created. This folder will likely be called `data-carpentry`.
 - Go to the file in which the instructor is now coding:
-  - **Day 2:** [script.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/script.R)
+  - **Day 2:** 
+     - [intro-r.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/intro-r.R)
+     - [starting-data.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/starting-data.R)
   - **Day 3:** [data-wrangling.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/data-wrangling.R)
   - **Day 4:** [awesome-report.Rmd](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/documents/awesome-report.Rmd)
 - You don't see the most recent lines of code? Refresh the page and  see the new commands coming in!
