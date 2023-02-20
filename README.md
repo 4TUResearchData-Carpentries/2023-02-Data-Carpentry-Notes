@@ -1,7 +1,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 # Data Carpentry for Social Sciences & Humanities  - Notes from R lesson
-In this repository you will find scripts and documents created during the [Data Carpentry for Social Sciences & Humanities](https://eur-nl.github.io/2022-10-24-ldev-online/) workshop organised by Leiden University, TU Delft, Erasmus University Rotterdam, VU Amsterdam on Oct 24, 25, 27, 28, 2022.
+In this repository you will find scripts and documents created during the [Data Carpentry for Social Sciences & Humanities](https://ubvu.github.io/2023-02-20-ldev-online/) workshop organised by Leiden University, TU Delft, Erasmus University Rotterdam, VU Amsterdam on Oct 24, 25, 27, 28, 2022.
 
 ## Usage Learners 
 The repository should mimic the project structure of the R project that has been created by the instructors during the Data Carpentry. 
