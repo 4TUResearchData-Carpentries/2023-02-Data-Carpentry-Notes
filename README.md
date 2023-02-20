@@ -18,6 +18,7 @@ The repository should mimic the project structure of the R project that has been
 Instructors can automatically update repository using [gitautopush](https://pypi.org/project/gitautopush/). 
 
 ### Prerequisites for the solution
+
 To work with the solution instructors need to have the following setup ready:
 - Python and pip installed
 - Git installed
