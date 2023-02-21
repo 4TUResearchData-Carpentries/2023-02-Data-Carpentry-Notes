@@ -22,7 +22,7 @@ names(interviews) # prints column names
 # summary information
 str(interviews) # structure and info about class, length, content
 summary(interviews) # summary statistics for each column
-
+glimpse(interviews)
 
 
 
