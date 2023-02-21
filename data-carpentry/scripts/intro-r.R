@@ -46,3 +46,8 @@ respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
 length(hh_members) # length of the hh_members vector
 length(respondent_wall_type)
 
+typeof(respondent_wall_type) # what type of object is respondent_wall_type?
+str(hh_members) # see the structure of an object
+
+possessions <- c("bicycle", "radio", "television")
+
