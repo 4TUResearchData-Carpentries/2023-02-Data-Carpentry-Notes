@@ -24,5 +24,9 @@ str(interviews) # structure and info about class, length, content
 summary(interviews) # summary statistics for each column
 glimpse(interviews)
 
+# indexing and subsetting data frames > to extract bits of data
+interviews[1, 1] # first element in the first column [row, column]
+interviews[7, 9] # seventh element in the 9th column
+interviews
 
 
