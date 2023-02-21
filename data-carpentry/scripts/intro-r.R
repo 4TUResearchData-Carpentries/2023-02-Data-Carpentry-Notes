@@ -68,4 +68,6 @@ hh_members > 5 # show value positions that satisfy condition x > 5
 
 hh_members[hh_members > 5] # show all values greater than 5
 
+hh_members[hh_members < 4 | hh_members > 7]
 
+possessions[possessions == "car"]
