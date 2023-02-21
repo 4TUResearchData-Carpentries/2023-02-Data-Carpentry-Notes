@@ -6,3 +6,6 @@ interviews <- read_csv(
   here("data", "SAFI_clean.csv"),
   na = "NULL"
 )
+
+interviews
+class(interviews)
