@@ -34,4 +34,7 @@ interviews[1:4, 7] # first 4 elements of the 7th column
 interviews[3, ] # the 3rd row of the tibble
 
 interviews[, -1] # exclude the first column
+interviews[-c(7:131), ] # equivalent of head(interviews)
+
+# subsetting using column names
 
