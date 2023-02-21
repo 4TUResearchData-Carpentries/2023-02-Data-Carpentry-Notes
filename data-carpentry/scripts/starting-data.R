@@ -19,5 +19,10 @@ head(interviews) # first 6 rows
 tail(interviews) # last 6 rows
 head(interviews, n = 20) # first 20 rows
 names(interviews) # prints column names
+# summary information
+str(interviews) # structure and info about class, length, content
+summary(interviews) # summary statistics for each column
+
+
 
 
