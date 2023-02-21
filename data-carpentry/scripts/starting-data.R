@@ -30,6 +30,6 @@ interviews[7, 9] # seventh element in the 9th column
 interviews[1] # first column of the tibble
 interviews[[1]] # first column of the tibble as a vector
 interviews[1:4, 7] # first 4 elements of the 7th column
-
+1:10 # creates numeric vector from 1 to 10
 
 
