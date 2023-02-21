@@ -50,4 +50,13 @@ typeof(respondent_wall_type) # what type of object is respondent_wall_type?
 str(hh_members) # see the structure of an object
 
 possessions <- c("bicycle", "radio", "television")
+possessions <- c(possessions, "mobile_phone")
+possessions <- c("car", possessions)
+
+# Exercise
+
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2, 3, TRUE)
+char_logical <- c("a", "b", "c", TRUE)
+tricky <- c(1, 2, 3, "4")
 
