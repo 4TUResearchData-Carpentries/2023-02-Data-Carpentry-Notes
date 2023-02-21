@@ -64,6 +64,8 @@ tricky <- c(1, 2, 3, "4")
 
 hh_members[c(TRUE, FALSE, TRUE, TRUE)]
 
-hh_members > 5 # show all values greater than 5
+hh_members > 5 # show value positions that satisfy condition x > 5
+
+hh_members[hh_members > 5] # show all values greater than 5
 
 
