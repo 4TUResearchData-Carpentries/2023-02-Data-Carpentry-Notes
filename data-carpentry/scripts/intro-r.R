@@ -27,3 +27,11 @@ r_area <- r_length * r_width
 # Functions
 
 round(3.14159) # run the round function with pi as an argument
+
+args(round) # check arguments of the round function
+?round
+
+round(3.14159, digits = 2) # round to 2 decimal points using the digits argument
+
+
+
