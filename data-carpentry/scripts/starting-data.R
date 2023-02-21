@@ -43,5 +43,11 @@ interviews[["village"]] # a vector of the village column
 names(interviews)
 interviews$months_lack_food # a vector of the months_lack_food column
 
+#### EXERCISE
+# 1.
+interviews_100 <- interviews[100, ]
+# 2.
+n_rows <- nrow(interviews)
+interviews_last <- interviews[n_rows, ]
 
 
