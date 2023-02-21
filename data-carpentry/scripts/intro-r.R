@@ -37,4 +37,6 @@ round(3.14159, 2) # can remove the names of the arguments if we use the right or
 
 round(digits = 2, x = 3.14159) # can flip the arguments as long as you name them
 
+# Vectors and data types
+
 
