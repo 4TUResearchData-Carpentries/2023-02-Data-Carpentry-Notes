@@ -62,3 +62,8 @@ tricky <- c(1, 2, 3, "4")
 
 # Subsetting
 
+hh_members[c(TRUE, FALSE, TRUE, TRUE)]
+
+hh_members > 5 # show all values greater than 5
+
+
