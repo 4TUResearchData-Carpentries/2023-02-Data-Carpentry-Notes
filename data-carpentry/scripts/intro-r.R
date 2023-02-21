@@ -18,3 +18,12 @@ area_hectares <- 50
 print(area_acres) # print area_acres
 area_acres # also print area_acres
 
+# Exercise 1
+
+r_length <- 6
+r_width <- 7
+r_area <- r_length * r_width
+
+# Functions
+
+round(3.14159) # run the round function with pi as an argument
