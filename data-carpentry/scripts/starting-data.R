@@ -40,8 +40,8 @@ interviews[-c(7:131), ] # equivalent of head(interviews)
 interviews["village"] # a tibble of the village column
 interviews[6, "village"] # row 6 of the village column
 interviews[["village"]] # a vector of the village column
-
-
+names(interviews)
+interviews$months_lack_food # a vector of the months_lack_food column
 
 
 
