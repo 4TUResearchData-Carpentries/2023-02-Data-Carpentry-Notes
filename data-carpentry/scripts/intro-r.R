@@ -39,4 +39,10 @@ round(digits = 2, x = 3.14159) # can flip the arguments as long as you name them
 
 # Vectors and data types
 
+hh_members <- c(3, 7, 10, 6) # create a vector with four values
+
+respondent_wall_type <- c("muddaub", "burntbricks", "sunbricks")
+
+length(hh_members) # length of the hh_members vector
+length(respondent_wall_type)
 
