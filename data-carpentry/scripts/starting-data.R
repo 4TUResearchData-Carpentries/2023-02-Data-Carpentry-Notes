@@ -37,4 +37,11 @@ interviews[, -1] # exclude the first column
 interviews[-c(7:131), ] # equivalent of head(interviews)
 
 # subsetting using column names
+interviews["village"] # a tibble of the village column
+interviews[6, "village"] # row 6 of the village column
+
+
+
+
+
 
