@@ -9,3 +9,9 @@ interviews <- read_csv(
 
 interviews
 class(interviews)
+
+# inspect the interviews data frame using some functions
+dim(interviews)
+
+
+
