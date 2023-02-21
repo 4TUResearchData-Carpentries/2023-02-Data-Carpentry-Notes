@@ -70,4 +70,4 @@ hh_members[hh_members > 5] # show all values greater than 5
 
 hh_members[hh_members < 4 | hh_members > 7]
 
-possessions[possessions == "car" | possessions == "bicycle"]
+possessions[possessions == "car" | possessions == "bicycle"] # subset by string
