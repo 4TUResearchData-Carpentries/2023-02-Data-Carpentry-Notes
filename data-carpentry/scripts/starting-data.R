@@ -110,5 +110,6 @@ memb_assoc <- as.factor(memb_assoc) # convert into factor
 plot(memb_assoc) # bar plot with NA / undetermined respondents
 
 #### EXERCISE
+# 1.
 
 
