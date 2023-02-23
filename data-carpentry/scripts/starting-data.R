@@ -102,4 +102,9 @@ as.numeric(levels(year_fct))[year_fct]  # the recommended way > first obtain fac
 memb_assoc <- interviews$memb_assoc # create a vector from the "memb_assoc column in the interviews data frame
 memb_assoc <- as.factor(memb_assoc) # convert it into a factor
 memb_assoc # have a look
+plot(memb_assoc) # bar plot of respondents who were members of an irrigation association
+
+
+
+
 
