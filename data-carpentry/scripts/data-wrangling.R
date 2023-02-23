@@ -122,8 +122,10 @@ interviews %>%
 
 interviews %>%
   count(no_meals)
-
-interviews %>% group_by(village) %>% 
+# 2. Find the mean, min, and max number of household members for each village. 
+# Add the number of observations. 
+interviews %>% 
+  group_by(village) %>% 
   summarise(mean_membrs = mean(no_membrs),
             min_membrs = min(no_membrs),
             max_membrs = max(no_membrs),
