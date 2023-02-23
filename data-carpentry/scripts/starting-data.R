@@ -87,4 +87,5 @@ respondent_floor_type_ordered <- factor(respondent_floor_type,
                                         ordered = TRUE)
 respondent_floor_type_ordered # after setting as ordered factor
 
-
+## Converting factors
+as.character(respondent_floor_type) # convert to character vector
