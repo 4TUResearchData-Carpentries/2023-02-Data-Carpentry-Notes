@@ -42,5 +42,7 @@ filter(interviews, village == "Chirodzo" |
 
 # Subsetting by rows and columns -----
 
+# Use intermediate steps 
+
 
 
