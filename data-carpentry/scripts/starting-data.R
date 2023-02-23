@@ -59,4 +59,14 @@ median_row <- median(1:(n_rows-1))
 interview_middle_alternative <- interviews[round(median_row), ]
 interview_middle_alternative
 # other option with nrow
+interviews_middle2 <- interviews[median(1:n_rows), ]
+interviews_middle2
+# 4.
+interview_head <- interviews[-(7:n_rows), ]
+interview_head
+# alternative solution without nrow()
+rows1_6 <- interviews[-c(7:131), ]
+rows1_6
+
+#### FACTORS
 
