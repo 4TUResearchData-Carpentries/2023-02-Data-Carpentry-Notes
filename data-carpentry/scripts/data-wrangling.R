@@ -94,6 +94,13 @@ interviews_exc2 <- interviews %>%
   select(village, total_meals)
 
 
+# split - apply - combine -----
+
+
+# average household size by village 
+interviews %>%
+  group_by(village) %>%
+  summarize(mean_no_membrs = mean(no_membrs) )
 
 
 
