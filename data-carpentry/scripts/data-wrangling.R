@@ -123,3 +123,9 @@ interviews %>%
 interviews %>%
   count(no_meals)
 
+interviews %>% group_by(village) %>% 
+  summarise(mean_membrs = mean(no_membrs),
+            min_membrs = min(no_membrs),
+            max_membrs = max(no_membrs),
+            n = n())
+
