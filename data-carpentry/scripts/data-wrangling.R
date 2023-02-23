@@ -79,6 +79,20 @@ interviews %>%
   select(people_per_room)
 
 
+# Exercise 2: 🕧 5 mins
+# Create a new dataframe from the interviews data that:
+#   
+#   contains only the village column and a new column called total_meals, standing for total number of meals served in the household per day on average (no_membrs times no_meals).
+# Only the rows where total_meals is greater than 20 should be shown in the final dataframe
+# 
+
+# solution 
+
+interviews_exc2 <- interviews %>%
+  mutate(total_meals = no_membrs * no_meals) %>%
+  filter(total_meals > 20) %>%
+  select(village, total_meals)
+
 
 
 
