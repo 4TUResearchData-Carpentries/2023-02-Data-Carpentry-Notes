@@ -82,5 +82,7 @@ respondent_floor_type # after re-ordering
 respondent_floor_type <- fct_recode(respondent_floor_type,
                                     brick = "cement") # recode "cement" to "brick"
 respondent_floor_type # after renaming
-
+# factor is unordered, but we can make an ordinal variable out of it
+respondent_floor_type_ordered <- factor(respondent_floor_type,
+                                        ordered = TRUE)
 
