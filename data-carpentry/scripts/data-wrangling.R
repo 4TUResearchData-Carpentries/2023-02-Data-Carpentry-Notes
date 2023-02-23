@@ -133,3 +133,7 @@ interviews %>%
             n = n())
 
 
+interviews %>%
+  count(village)
+
+
