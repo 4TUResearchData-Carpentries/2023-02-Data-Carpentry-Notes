@@ -57,3 +57,21 @@ interviews_ch <- interviews %>%
   select(village:respondent_wall_type)
   
 
+# Exercise 1: ⌚ 5 mins
+# subset the interviews data to include interviews where respondents 
+# were members of an irrigation association (memb_assoc);
+# retain only the columns affect_conflicts, liv_count, and no_meals;
+
+# Solution
+interviews_exc1 <- interviews %>%
+  filter(memb_assoc == "yes") %>%
+  select(affect_conflicts, liv_count, no_meals)
+
+interviews_ex <- interviews %>% filter(memb_assoc == "yes") %>% 
+  select(c(affect_conflicts, liv_count, no_meals))
+
+
+
+
+
+use pipes!
