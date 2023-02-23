@@ -99,7 +99,7 @@ as.numeric(levels(year_fct))[year_fct]  # the recommended way > first obtain fac
                                         # finally we access these numeric values using the integers inside the square brackets
 
 ## Renaming factors
-
+memb_assoc <- interviews$memb_assoc # create a vector from the "memb_assoc column in the interviews data frame
 
 
 
