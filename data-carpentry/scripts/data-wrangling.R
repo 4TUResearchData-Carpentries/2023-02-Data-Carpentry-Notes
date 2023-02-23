@@ -146,3 +146,13 @@ interviews_wide <- interviews %>%
               values_from = wall_type_logical, 
               values_fill = FALSE )
 view(interviews_wide)
+
+# convert from wide to long 
+
+interviews_long <- interviews_wide %>%
+  pivot_longer(cols = c(muddaub, cement, sunbricks, burntbricks),
+               names_to = "respondent_wall_type",
+               values_to = "wall_type_logical"
+               ) %>% 
+  filter(wall_type_logical == TRUE) %>%
+  select(-wall_type_logical)
