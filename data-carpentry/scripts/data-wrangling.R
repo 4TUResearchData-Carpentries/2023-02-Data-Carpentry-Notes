@@ -102,5 +102,9 @@ interviews %>%
   group_by(village) %>%
   summarize(mean_no_membrs = mean(no_membrs) )
 
+# average household size by village and irrigation society (memb_assoc)
+interviews %>%
+  group_by(village, memb_assoc) %>%
+  summarize(mean_no_membrs = mean(no_membrs))
 
 
