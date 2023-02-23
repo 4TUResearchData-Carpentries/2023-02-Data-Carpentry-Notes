@@ -107,4 +107,10 @@ interviews %>%
   group_by(village, memb_assoc) %>%
   summarize(mean_no_membrs = mean(no_membrs))
 
+# filter out NAs
+interviews %>%
+  filter( !is.na(memb_assoc) ) %>%
+  group_by(village, memb_assoc) %>%
+  summarize(mean_no_membrs = mean(no_membrs))
+
 
