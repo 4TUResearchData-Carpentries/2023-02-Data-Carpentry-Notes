@@ -27,6 +27,8 @@ select(interviews, village:respondent_wall_type)
 
 # Subsetting by rows ----
 
+#keep only observations from village Chirodzo
+
 
 
 
