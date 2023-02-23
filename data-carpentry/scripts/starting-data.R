@@ -109,3 +109,6 @@ memb_assoc[is.na(memb_assoc)] <- "undetermined" # replace missing data with "und
 memb_assoc <- as.factor(memb_assoc) # convert into factor
 plot(memb_assoc) # bar plot with NA / undetermined respondents
 
+#### EXERCISE
+
+
