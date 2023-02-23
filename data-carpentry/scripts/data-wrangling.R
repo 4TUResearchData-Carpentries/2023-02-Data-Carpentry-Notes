@@ -22,3 +22,5 @@ select(interviews, village, no_membrs, months_lack_food)
 # do the same with subsetting 
 interviews[c("village", "no_membrs", "months_lack_food")]
 
+# select a series of columns placed next to each other
+
