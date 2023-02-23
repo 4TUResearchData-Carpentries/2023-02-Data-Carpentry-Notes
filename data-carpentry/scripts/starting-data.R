@@ -122,6 +122,10 @@ plot(memb_assoc)
 
 #### FORMATTING DATES
 library(lubridate)
+dates <- interviews$interview_date # extract the interview_date column
+str(dates)
 
+interviews$day <- day(dates) # extract day column from dates
+in
 
 
