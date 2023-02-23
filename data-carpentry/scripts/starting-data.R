@@ -111,5 +111,12 @@ plot(memb_assoc) # bar plot with NA / undetermined respondents
 
 #### EXERCISE
 # 1.
+memb_assoc <- fct_recode(memb_assoc, 
+                         Yes = "yes", No = "no", 
+                         Undetermined = "undetermined")
+plot(memb_assoc)
+# 2.
+
+
 
 
