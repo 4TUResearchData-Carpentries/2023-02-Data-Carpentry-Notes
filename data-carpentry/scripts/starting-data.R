@@ -104,7 +104,8 @@ memb_assoc <- as.factor(memb_assoc) # convert it into a factor
 memb_assoc # have a look
 plot(memb_assoc) # bar plot of respondents who were members of an irrigation association
 
-
-
+memb_assoc <- interviews$memb_assoc
+memb_assoc[is.na(memb_assoc)] <- "undetermined" # replace missing data with "undetermined"
+memb_assoc
 
 
