@@ -136,4 +136,8 @@ interviews %>%
 interviews %>%
   count(village)
 
+# Transforming between long and wide formaT ----
+
+# Long to wide 
+
 
