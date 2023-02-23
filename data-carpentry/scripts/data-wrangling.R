@@ -40,4 +40,7 @@ filter(interviews, village == "Chirodzo" |
          rooms > 1 |
          no_meals > 2)
 
+# Subsetting by rows and columns -----
+
+
 
