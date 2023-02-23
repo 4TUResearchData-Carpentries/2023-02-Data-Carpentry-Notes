@@ -23,4 +23,6 @@ select(interviews, village, no_membrs, months_lack_food)
 interviews[c("village", "no_membrs", "months_lack_food")]
 
 # select a series of columns placed next to each other
+select(interviews, village:respondent_wall_type)
+
 
