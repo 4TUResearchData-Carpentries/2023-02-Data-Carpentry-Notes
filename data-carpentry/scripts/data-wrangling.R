@@ -43,6 +43,6 @@ filter(interviews, village == "Chirodzo" |
 # Subsetting by rows and columns -----
 
 # Use intermediate steps 
-
-
+interviews_temp <- filter(interviews, village == "Chirodzo")
+interviews_ch <- select(interviews_temp, village:respondent_wall_type )
 
