@@ -116,4 +116,10 @@ interviews %>%
             min_rooms = min(rooms)
   )
 
+# Exercise 3
+
+# 1. How many households in the survey have an average of two meals per day?
+
+interviews %>%
+  count(no_meals)
 
