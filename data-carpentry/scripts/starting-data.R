@@ -70,3 +70,8 @@ rows1_6
 
 #### FACTORS
 
+# let's create a short factor:
+respondent_floor_type <- factor(c("earth", "cement", "cement", "earth"))
+
+
+
