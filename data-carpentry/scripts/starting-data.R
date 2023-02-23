@@ -116,7 +116,12 @@ memb_assoc <- fct_recode(memb_assoc,
                          Undetermined = "undetermined")
 plot(memb_assoc)
 # 2.
+memb_assoc <- factor(memb_assoc, 
+                     levels = c("No", "Yes", "Undetermined"))
+plot(memb_assoc)
 
+#### FORMATTING DATES
+library(lubridate)
 
 
 
