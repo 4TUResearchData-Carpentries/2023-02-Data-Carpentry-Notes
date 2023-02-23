@@ -30,5 +30,5 @@ select(interviews, village:respondent_wall_type)
 #keep only observations from village Chirodzo
 filter(interviews, village == "Chirodzo")
 
-
+# filter with AND statement 
 
