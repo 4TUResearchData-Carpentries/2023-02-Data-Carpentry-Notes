@@ -71,6 +71,9 @@ interviews_ex <- interviews %>% filter(memb_assoc == "yes") %>%
   select(c(affect_conflicts, liv_count, no_meals))
 
 
+# create new columns ----
+
+
 
 
 
