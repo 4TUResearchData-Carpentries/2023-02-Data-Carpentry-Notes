@@ -50,5 +50,13 @@ interviews_100 <- interviews[100, ]
 n_rows <- nrow(interviews)
 interviews_last <- interviews[n_rows, ]
 # 3.
-
+# 1 option without nrow
+middle <- median(1:131)
+interviews_middle <- interviews[middle, ]
+interviews_middle
+# 1 option with nrow
+median_row <- median(1:(n_rows-1))
+interview_middle_alternative <- interviews[round(median_row), ]
+interview_middle_alternative
+# other option with nrow
 
