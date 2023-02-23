@@ -72,6 +72,13 @@ rows1_6
 
 # let's create a short factor:
 respondent_floor_type <- factor(c("earth", "cement", "cement", "earth"))
+# R will assign 1 to "cement" and 2 to "earth" (alphabetically)
+# let's have a look:
+
+
+
+
+
 
 
 
