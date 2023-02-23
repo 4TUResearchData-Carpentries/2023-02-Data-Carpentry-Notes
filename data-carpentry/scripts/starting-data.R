@@ -49,5 +49,6 @@ interviews_100 <- interviews[100, ]
 # 2.
 n_rows <- nrow(interviews)
 interviews_last <- interviews[n_rows, ]
+# 3.
 
 
