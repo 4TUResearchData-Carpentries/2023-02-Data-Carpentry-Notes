@@ -73,8 +73,12 @@ interviews_ex <- interviews %>% filter(memb_assoc == "yes") %>%
 
 # create new columns ----
 
+# average number of household members per room 
+interviews %>%
+  mutate(people_per_room = no_membrs / rooms ) %>%
+  select(people_per_room)
 
 
 
 
-use pipes!
+
