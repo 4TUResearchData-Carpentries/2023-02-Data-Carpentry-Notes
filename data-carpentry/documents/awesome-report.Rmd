@@ -24,3 +24,10 @@ dataset, which has columns that include:
 - respondent_wall_type
 - rooms
 
+This is a list of my favourite variables
+
+1. interview_date
+2. village
+3. rooms
+4. no_members
+
