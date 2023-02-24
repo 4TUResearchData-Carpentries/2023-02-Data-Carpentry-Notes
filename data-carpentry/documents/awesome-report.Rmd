@@ -52,7 +52,7 @@ Here is a table.
 interviews %>% 
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
-  summarise(mean_no_membrs = mean(no_membrs)) %>% 
+  summarise(mean_no_membrs = mean(no_membrs)) #%>% 
   knitr::kable(
     caption = "This is the aforementioned table."
   )
