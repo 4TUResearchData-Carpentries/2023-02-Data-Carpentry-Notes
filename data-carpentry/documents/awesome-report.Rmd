@@ -39,6 +39,10 @@ library(tidyverse)
 library(here)
 interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
 interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
+knitr::opts_chunk$set(
+  echo = FALSE,
+  fig.path = here("fig_output/")
+  )
 ```
 
 ## Materials and methods
@@ -49,7 +53,7 @@ I did some stuff.
 
 Here is a table.
 
-```{r echo=FALSE, message=FALSE}
+```{r echo=TRUE, message=FALSE}
 interviews %>% 
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
@@ -131,7 +135,7 @@ percent_wall_type <- interviews_plotting %>%
 ```
 
 
-```{r}
+```{r my-plot, fig.cap="This is my caption."}
 percent_wall_type %>% 
   ggplot(aes(x = respondent_wall_type, y = percent, fill = respondent_wall_type)) +
     geom_bar(stat = "identity", position = "dodge") +
@@ -147,6 +151,8 @@ percent_wall_type %>%
     panel.grid.major.x = element_blank(),
     legend.position = "none"
   )
+
+ggsave("fig_output/my_plot.png")
 ```
 
 
