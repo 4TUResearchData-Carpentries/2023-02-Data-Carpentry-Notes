@@ -113,6 +113,10 @@ Does this seem like a good way to display the relationship between these variabl
 
 What other kinds of plots might you use to show this type of data? -->
 
+Enough with the mediocre plots. Here's one awesome plot to rule them all.
+
+
+
 
 
 
