@@ -113,15 +113,6 @@ Does this seem like a good way to display the relationship between these variabl
 
 What other kinds of plots might you use to show this type of data?
 
-```{r}
-interviews_plotting %>%
-ggplot(aes(x = rooms, y = village, col = respondent_wall_type)) + # col to add color to the framework, each wall type in other color
-geom_count(
-alpha = 0.3,
-)
-
-interviews_plotting %>% ggplot(aes(x = rooms, y = village, colour = respondent_wall_type)) + geom_count() 
-```
 
 
 
