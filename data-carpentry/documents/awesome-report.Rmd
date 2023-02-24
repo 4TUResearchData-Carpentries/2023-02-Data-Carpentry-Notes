@@ -18,7 +18,10 @@ This ***awesome*** well-written guide uses the **tidyverse** package along with 
 dataset, which has columns that include:
 
 - village
+  + name of village
 - interview_date
+  + date of interview
+    * ISO standard
 - no_members
 - years_liv
 - respondent_wall_type
