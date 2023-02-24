@@ -14,6 +14,6 @@ Blah blah blah... world-changing science...
 
 ## Introduction
 
-This awesome well-written guide uses the **tidyverse** package along with the *SAFI*
+This ***awesome*** well-written guide uses the **tidyverse** package along with the *SAFI*
 dataset, which has columns that include:
 
