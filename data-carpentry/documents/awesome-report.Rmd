@@ -59,6 +59,14 @@ interviews %>%
   )
 ```
 
+```{r}
+mean_household <- interviews %>%
+  group_by(village) %>% 
+  summarise(mean_no_membrs = mean(no_membrs))
 
+mean_chirodzo <- mean_household %>% 
+  filter(village == "Chirodzo")
+```
 
+The average household size in the village of Chirodzo is `r mean_chirodzo$mean_no_membrs`.
 

@@ -455,6 +455,14 @@ which has columns that include:</p>
 </tr>
 </tbody>
 </table>
+<pre class="r"><code>mean_household &lt;- interviews %&gt;%
+  group_by(village) %&gt;% 
+  summarise(mean_no_membrs = mean(no_membrs))
+
+mean_chirodzo &lt;- mean_household %&gt;% 
+  filter(village == &quot;Chirodzo&quot;)</code></pre>
+<p>The average household size in the village of Chirodzo is
+7.0769231.</p>
 </div>
 </div>
 
