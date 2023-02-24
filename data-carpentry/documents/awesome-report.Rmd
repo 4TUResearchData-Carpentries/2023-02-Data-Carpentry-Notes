@@ -34,7 +34,7 @@ This is a list of my favourite variables
 3. rooms
 4. no_members
 
-```{r setup, include=FALSE}
+```{r setup, eval=FALSE, echo=FALSE}
 library(tidyverse)
 library(here)
 interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
