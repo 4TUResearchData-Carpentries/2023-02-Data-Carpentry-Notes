@@ -48,7 +48,7 @@ I did some stuff.
 
 Here is a table.
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE}
 interviews %>% 
   filter(!is.na(memb_assoc)) %>% 
   group_by(village, memb_assoc) %>% 
