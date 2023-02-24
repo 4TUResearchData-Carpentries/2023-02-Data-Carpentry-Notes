@@ -100,7 +100,7 @@ interviews_plotting %>%
   ggplot(aes(x = no_membrs, y = number_items, colour = village)) +
     geom_count()
 ```
-
+<!-- comment 
 Exercise 2
 
 🕰 6 mins
@@ -111,8 +111,7 @@ Create a scatter plot of rooms by village with the respondant_wall_type showing 
 
 Does this seem like a good way to display the relationship between these variables?
 
-What other kinds of plots might you use to show this type of data?
-
+What other kinds of plots might you use to show this type of data? -->
 
 
 
