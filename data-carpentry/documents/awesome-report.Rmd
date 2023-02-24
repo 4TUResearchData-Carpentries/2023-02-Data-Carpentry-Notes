@@ -78,14 +78,50 @@ Here are some plots.
 ```{r}
 interviews_plotting %>% 
   ggplot(aes(x = no_membrs, y = number_items)) +
-    geom_point()
+    geom_point(alpha = 0.2) # specify level of opacity/transparency for each point
 ```
 
 
+That is not ideal for integers...
 
+```{r}
+interviews_plotting %>% 
+  ggplot(aes(x = no_membrs, y = number_items)) +
+    geom_jitter(
+      colour = "blue",
+      alpha = 0.3,
+      width = 0.2, # specify level of random noise on x-axis
+      height = 0.2 # specify level of random noise on y-axis
+    )
+```
 
+```{r}
+interviews_plotting %>%
+  ggplot(aes(x = no_membrs, y = number_items, colour = village)) +
+    geom_count()
+```
 
+Exercise 2
 
+🕰 6 mins
+
+Create a new code chunk with the label rooms-village-scatter.
+
+Create a scatter plot of rooms by village with the respondant_wall_type showing in different colours.
+
+Does this seem like a good way to display the relationship between these variables?
+
+What other kinds of plots might you use to show this type of data?
+
+```{r}
+interviews_plotting %>%
+ggplot(aes(x = rooms, y = village, col = respondent_wall_type)) + # col to add color to the framework, each wall type in other color
+geom_count(
+alpha = 0.3,
+)
+
+interviews_plotting %>% ggplot(aes(x = rooms, y = village, colour = respondent_wall_type)) + geom_count() 
+```
 
 
 
