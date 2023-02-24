@@ -38,6 +38,7 @@ This is a list of my favourite variables
 library(tidyverse)
 library(here)
 interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
+interviews_plotting <- read_csv(here("data_output/interviews_plotting.csv"))
 ```
 
 ## Materials and methods
@@ -76,7 +77,8 @@ Here are some plots.
 
 ```{r}
 interviews_plotting %>% 
-  ggplot()
+  ggplot(aes(x = no_membrs, y = number_items)) +
+    geom_point()
 ```
 
 
