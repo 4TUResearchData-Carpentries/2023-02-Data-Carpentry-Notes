@@ -40,6 +40,23 @@ library(here)
 interviews <- read_csv(here("data/SAFI_clean.csv"), na = "NULL")
 ```
 
+## Materials and methods
+
+I did some stuff.
+
+## Results
+
+Here is a table.
+
+```{r}
+interviews %>% 
+  filter(!is.na(memb_assoc)) %>% 
+  group_by(village, memb_assoc) %>% 
+  summarise(mean_no_membrs = mean(no_membrs)) %>% 
+  knitr::kable(
+    caption = "This is the aforementioned table."
+  )
+```
 
 
 
