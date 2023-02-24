@@ -12,7 +12,7 @@ The repository should mimic the project structure of the R project that has been
      - [starting-data.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/starting-data.R)
   - **Day 3:** [data-wrangling.R](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/scripts/data-wrangling.R)
   - **Day 4:** [awesome-report.Rmd](https://github.com/4TUResearchData-Carpentries/2023-02-Data-Carpentry-Notes/blob/main/data-carpentry/documents/awesome-report.Rmd)
-- You don't see the most recent lines of code? Refresh the page and  see the new commands coming in!
+- You don't see the most recent lines of code? Refresh the page and see the new commands coming in!
 
 > *Note*: you will only see non-empty folders. You still need to create folders to follow the workshop smoothly.
 
