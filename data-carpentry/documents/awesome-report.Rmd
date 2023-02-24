@@ -54,7 +54,8 @@ interviews %>%
   group_by(village, memb_assoc) %>% 
   summarise(mean_no_membrs = mean(no_membrs)) %>% 
   knitr::kable(
-    caption = "This is the aforementioned table."
+    caption = "This is the aforementioned table.",
+    col.names = c("Village", "Member Association", "Mean Number of Members")
   )
 ```
 
