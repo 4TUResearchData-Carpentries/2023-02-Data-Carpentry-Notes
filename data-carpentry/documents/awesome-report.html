@@ -439,7 +439,8 @@ which has columns that include:</p>
   group_by(village, memb_assoc) %&gt;% 
   summarise(mean_no_membrs = mean(no_membrs)) %&gt;% 
   knitr::kable(
-    caption = &quot;This is the aforementioned table.&quot;
+    caption = &quot;This is the aforementioned table.&quot;,
+    col.names = c(&quot;Village&quot;, &quot;Member Association&quot;, &quot;Mean Number of Members&quot;)
   )</code></pre>
 <pre><code>## `summarise()` has grouped output by &#39;village&#39;. You can override using the
 ## `.groups` argument.</code></pre>
@@ -447,9 +448,9 @@ which has columns that include:</p>
 <caption>This is the aforementioned table.</caption>
 <thead>
 <tr class="header">
-<th align="left">village</th>
-<th align="left">memb_assoc</th>
-<th align="right">mean_no_membrs</th>
+<th align="left">Village</th>
+<th align="left">Member Association</th>
+<th align="right">Mean Number of Members</th>
 </tr>
 </thead>
 <tbody>
