@@ -115,6 +115,11 @@ What other kinds of plots might you use to show this type of data? -->
 
 Enough with the mediocre plots. Here's one awesome plot to rule them all.
 
+```{r}
+interviews_plotting %>% 
+  ggplot(aes(x = respondent_wall_type, fill = village)) +
+    geom_bar()
+```
 
 
 
