@@ -79,6 +79,83 @@ interviews %>%
   select(people_per_room)
 
 
+# Exercise 2: 🕧 5 mins
+# Create a new dataframe from the interviews data that:
+#   
+#   contains only the village column and a new column called total_meals, standing for total number of meals served in the household per day on average (no_membrs times no_meals).
+# Only the rows where total_meals is greater than 20 should be shown in the final dataframe
+# 
+
+# solution 
+
+interviews_exc2 <- interviews %>%
+  mutate(total_meals = no_membrs * no_meals) %>%
+  filter(total_meals > 20) %>%
+  select(village, total_meals)
+
+
+# split - apply - combine -----
+
+
+# average household size by village 
+interviews %>%
+  group_by(village) %>%
+  summarize(mean_no_membrs = mean(no_membrs) )
+
+# average household size by village and irrigation society (memb_assoc)
+interviews %>%
+  group_by(village, memb_assoc) %>%
+  summarize(mean_no_membrs = mean(no_membrs))
+
+# filter out NAs
+interviews %>%
+  filter( !is.na(memb_assoc) ) %>%
+  group_by(village, memb_assoc) %>%
+  summarize(mean_no_membrs = mean(no_membrs),
+            min_membrs = min(no_membrs),
+            min_rooms = min(rooms)
+  )
+
+# Exercise 3
+
+# 1. How many households in the survey have an average of two meals per day?
+
+interviews %>%
+  count(no_meals)
+# 2. Find the mean, min, and max number of household members for each village. 
+# Add the number of observations. 
+
+interviews %>% 
+  group_by(village) %>% 
+  summarise(mean_membrs = mean(no_membrs),
+            min_membrs = min(no_membrs),
+            max_membrs = max(no_membrs),
+            n = n())
+
+
+interviews %>%
+  count(village)
+
+# Transforming between long and wide formaT ----
+
+# Long to wide 
+
+interviews_wide <- interviews %>%
+  mutate(wall_type_logical = TRUE) %>%
+  pivot_wider(names_from = respondent_wall_type,
+              values_from = wall_type_logical, 
+              values_fill = FALSE )
+view(interviews_wide)
+
+# convert from wide to long 
+
+interviews_long <- interviews_wide %>%
+  pivot_longer(cols = c(muddaub, cement, sunbricks, burntbricks),
+               names_to = "respondent_wall_type",
+               values_to = "wall_type_logical"
+               ) %>% 
+  filter(wall_type_logical == TRUE) %>%
+  select(-wall_type_logical)
 
 # Dataset for plotting
 interviews_plotting <- interviews %>%
@@ -101,4 +178,4 @@ interviews_plotting <- interviews %>%
   mutate(number_items = rowSums(select(., bicycle:car)))
 
 ## save the dataframe to our data_output directory
-write_csv(interviews_plotting, file = here("data_output/interviews_plotting.csv")) 
+write_csv(interviews_plotting, file = here("data_output/interviews_plotting.csv"))
