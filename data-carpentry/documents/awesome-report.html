@@ -405,27 +405,6 @@ which has columns that include:</p>
 <li>rooms</li>
 <li>no_members</li>
 </ol>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-## ✔ ggplot2 3.3.6      ✔ purrr   0.3.4 
-## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-## ✔ readr   2.1.2      ✔ forcats 0.5.2 
-## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(here)</code></pre>
-<pre><code>## here() starts at /home/bjorn/Nextcloud/Uni/prof-activities/carpentries/workshops/2023-02-20_dc-socialsci_ldev/2023-02-Data-Carpentry-Notes/data-carpentry</code></pre>
-<pre class="r"><code>interviews &lt;- read_csv(here(&quot;data/SAFI_clean.csv&quot;), na = &quot;NULL&quot;)</code></pre>
-<pre><code>## Rows: 131 Columns: 14
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr  (7): village, respondent_wall_type, memb_assoc, affect_conflicts, items...
-## dbl  (6): key_ID, no_membrs, years_liv, rooms, liv_count, no_meals
-## dttm (1): interview_date
-## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
 <div id="materials-and-methods" class="section level2">
 <h2>Materials and methods</h2>
