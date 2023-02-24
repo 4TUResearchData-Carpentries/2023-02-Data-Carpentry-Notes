@@ -70,3 +70,22 @@ mean_chirodzo <- mean_household %>%
 
 The average household size in the village of Chirodzo is `r mean_chirodzo$mean_no_membrs`.
 
+### Plots
+
+Here are some plots.
+
+```{r}
+interviews_plotting %>% 
+  ggplot()
+```
+
+
+
+
+
+
+
+
+
+
+
